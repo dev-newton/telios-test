@@ -10,58 +10,58 @@ export default function Navbar() {
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item ">
-          <a
+          <Link
             class="nav-link text-white text-uppercase margin-right-nav-27"
             href="#"
           >
             Home
-          </a>
+          </Link>
         </li>
 
         <li class="nav-item dropdown margin-right-nav-27">
-          <a
+          <Link
             class="nav-link dropdown-toggle text-white text-uppercase"
             href="#"
             id="navbardrop"
             data-toggle="dropdown"
           >
             Rooms
-          </a>
+          </Link>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">
+            <Link class="dropdown-item" href="#">
               Link 1
-            </a>
-            <a class="dropdown-item" href="#">
+            </Link>
+            <Link class="dropdown-item" href="#">
               Link 2
-            </a>
-            <a class="dropdown-item" href="#">
+            </Link>
+            <Link class="dropdown-item" href="#">
               Link 3
-            </a>
+            </Link>
           </div>
         </li>
 
         <li class="nav-item margin-right-nav-27">
-          <a class="nav-link text-white text-uppercase" href="#">
+          <Link class="nav-link text-white text-uppercase" href="#">
             Restaurant
-          </a>
+          </Link>
         </li>
 
         <li class="nav-item margin-right-nav-27">
-          <a class="nav-link text-white text-uppercase" href="#">
+          <Link class="nav-link text-white text-uppercase" to="/about-us">
             About us
-          </a>
+          </Link>
         </li>
 
         <li class="nav-item margin-right-nav-27">
-          <a class="nav-link text-white text-uppercase" href="#">
+          <Link class="nav-link text-white text-uppercase" href="#">
             Blog
-          </a>
+          </Link>
         </li>
 
         <li class="nav-item margin-right-nav-27">
-          <a class="nav-link text-white text-uppercase" href="#">
+          <Link class="nav-link text-white text-uppercase" href="#">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
