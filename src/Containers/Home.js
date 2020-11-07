@@ -4,12 +4,13 @@ import Navbar from "../Components/Navbar";
 import HeroImage from "../Components/HeroImage";
 import HeroText from "../Components/HeroText";
 import BookingBox from "../Components/BookingBox";
-import PictureSection from "../Components/PictureSection";
 import SectionTwo from "../Components/SectionTwo";
 import SectionThree from "../Components/SectionThree";
 import SectionFour from "../Components/SectionFour";
+import PictureSection from "../Components/PictureSection";
 import Footer from "../Components/Footer";
 
+import Stairs from "../assets/images/stairs1.png";
 import RightArrow from "../assets/images/arrow-right-white.png";
 import FoodOne from "../assets/images/food1.png";
 import FoodTwo from "../assets/images/food2.png";
@@ -17,21 +18,21 @@ import FoodThree from "../assets/images/food4.png";
 import FoodFive from "../assets/images/food5.png";
 import FoodSix from "../assets/images/food6.png";
 
+const header_text = "The best hotel \n you will ever need";
+
+const text =
+  "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit sed do eiusmod tempor incididunt\n ut labore et dolore magna aliqua. Ut enim ad";
+
 export default function Home() {
   return (
     <div>
-      <HeroImage />
+      <HeroImage className="hero-image" />
       <Navbar />
-      <HeroText
-        className="hero-text"
-        hero_text=" Lorem ipsum dolor sit amet, consectetur 
-        adipiscing elit, sed do eiusmod tempor incididunt  ut labore et
-        dolore magna aliqua. Ut enim ad"
-      />
+      <HeroText hero_header_text={header_text} hero_text={text} />
       <BookingBox />
       <SectionTwo />
       <SectionThree />
-      <SectionFour />
+      <SectionFour image={Stairs} />
 
       <div className="App">
         <h4 className="section-5 about-us remove-hor-margin">RESTAURANT</h4>

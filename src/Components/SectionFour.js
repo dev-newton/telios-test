@@ -1,12 +1,11 @@
 import React from "react";
 
-import Stairs from "../assets/images/stairs1.png";
 import Man from "../assets/images/man.png";
 
 import LeftArrowBlack from "../assets/images/arrow-left-back.png.png";
 import RightArrowBlack from "../assets/images/arrow-right-back.png";
 
-export default function SectionFour() {
+export default function SectionFour(props) {
   return (
     <div className="row section-4 remove-hor-padding remove-hor-margin ">
       <div className="App-left col-md-6  section2-left remove-hor-padding">
@@ -46,7 +45,7 @@ export default function SectionFour() {
       <div className=" col-md remove-hor-padding remove-hor-margin ">
         <img
           alt=""
-          src={Stairs}
+          src={props.image}
           className="stairs remove-hor-padding remove-hor-margin"
         />
         <div className="arrow-box-white4">

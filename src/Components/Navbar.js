@@ -12,7 +12,7 @@ export default function Navbar() {
         <li class="nav-item ">
           <Link
             class="nav-link text-white text-uppercase margin-right-nav-27"
-            href="#"
+            to="/"
           >
             Home
           </Link>

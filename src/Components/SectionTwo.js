@@ -3,9 +3,9 @@ import React from "react";
 import Outdoor from "../assets/images/outdoor.png";
 import RightArrow from "../assets/images/arrow-right-white.png";
 
-export default function SectionTwo() {
+export default function SectionTwo(props) {
   return (
-    <div className="App">
+    <div style={props.style} className="App">
       <div className="row section-2 remove-hor-padding remove-hor-margin ">
         <div className="col-md-6 section2-left remove-hor-padding">
           <h4 className="about-us remove-hor-margin">ABOUT US</h4>
